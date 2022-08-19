@@ -1,5 +1,7 @@
 #include "GPIO_Interrupt.h"
 
+
+/* This function will set the interrupt at particular Pin with Rising, Falling or both edge. */
 void GPIO_Interrupt_Set(uint8_t PORTx,uint8_t pin_number,uint8_t RT_FT_RFT)
 {
 	AFIO_CLK_ENABLE();    /* Alternate function IO CloclK enable */
@@ -29,6 +31,7 @@ void GPIO_Interrupt_Set(uint8_t PORTx,uint8_t pin_number,uint8_t RT_FT_RFT)
 
 }
 
+/* This function will Enable the Interrupt with particular IRQ-Number */
 void GPIO_Interrupt_Enable(uint8_t IRQ_number,uint8_t EN_DI)
 {
 	if(EN_DI==ENABLE)
@@ -61,7 +64,7 @@ void GPIO_Interrupt_Enable(uint8_t IRQ_number,uint8_t EN_DI)
 
 }
 
-
+/* This function will be use to set the priority for any Pin. */
 void GPIO_Interrupt_Priority(uint8_t IRQ_number,uint32_t Priority)
  {
 	uint8_t iprx	= IRQ_number/4;
@@ -70,6 +73,8 @@ void GPIO_Interrupt_Priority(uint8_t IRQ_number,uint32_t Priority)
 	IPR->IPRx[iprx] |= (Priority << shift);
 }
 
+
+/* This function will handle the interrupt inside the ISR */
 void GPIO_Interrupt_Handling(uint8_t pin_number)
  {
 	if(EXTI->PR & (1<< pin_number))
