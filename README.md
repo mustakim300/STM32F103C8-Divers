@@ -8,9 +8,11 @@
 
 [**\[2\] GPIO_Interrupt_Driver**](https://github.com/mustakim300/STM32F103C8-Divers/tree/main/GPIO_Interrupt_Driver)
 
-[**\[3\] I2C_Driver**](https://github.com/mustakim300/STM32F103C8-Divers/tree/main/I2C_driver)
+[**\[3\] GPT_Driver**](https://github.com/mustakim300/STM32F103C8-Divers/tree/main/GPT_Driver)
 
-[**\[4\] GPT_Driver**](https://github.com/mustakim300/STM32F103C8-Divers/tree/main/GPT_Driver)
+[**\[4\] I2C_Driver**](https://github.com/mustakim300/STM32F103C8-Divers/tree/main/I2C_driver)
+
+
 
 
 
