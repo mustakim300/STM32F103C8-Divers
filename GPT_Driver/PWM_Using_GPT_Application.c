@@ -14,9 +14,9 @@ int main(void)
     GPIO_MODE(GPIOA, OUTPUT,AF_PUSH_PULL, LED1);
     GPIO_MODE(GPIOA, OUTPUT,AF_PUSH_PULL, LED2);
 
-    /* This function takes parameters (TIMx, Channel, Frequency[KHz], Duty_Cycle)
+    /* This function takes parameters (TIMx, Channel, Frequency[KHz], Duty_Cycle) */
     PWM(TIM2,CH1,1, 100);
-    /* This function takes parameters (TIMx, Channel, Frequency[KHz], Duty_Cycle)
+    /* This function takes parameters (TIMx, Channel, Frequency[KHz], Duty_Cycle) */
     PWM(TIM2,CH2,1, 5);
 
 
